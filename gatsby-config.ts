@@ -23,6 +23,8 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
+          "@images": path.resolve(__dirname, 'src/assets/images'),
+          "@components": path.resolve(__dirname, 'src/components'),
           "@utils": path.resolve(__dirname, 'src/utils')
         },
         extensions: [
