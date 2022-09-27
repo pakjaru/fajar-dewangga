@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export const background = '#0a192f'
+export const backgroundSecondary = '#112240'
 export const primary = '#8892b0'
 export const primaryLight = '#ccd6f6'
 export const secondary = '#64ffda'
