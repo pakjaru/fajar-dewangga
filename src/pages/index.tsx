@@ -1,15 +1,16 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
 
-import { GlobalStyles } from "../utils/global-styles"
+import { HomeBanner, Layout } from "@components"
+import { GlobalHelmet } from "@utils/global-helmet"
 
 const IndexPage = () => {
   return (
     <>
-      <GlobalStyles />
-      <Helmet title="Fajar Dewangga" />
+      <GlobalHelmet title="Fajar Dewangga" />
 
-      <h1>HOMEPAGE</h1>
+      <Layout>
+        <HomeBanner />
+      </Layout>
     </>
   )
 }
