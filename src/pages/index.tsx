@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { Layout } from "@components"
+import { HomeBanner, Layout } from "@components"
 import { GlobalHelmet } from "@utils/global-helmet"
 
 const IndexPage = () => {
@@ -9,7 +9,7 @@ const IndexPage = () => {
       <GlobalHelmet title="Fajar Dewangga" />
 
       <Layout>
-        <h1>HomePage</h1>
+        <HomeBanner />
       </Layout>
     </>
   )

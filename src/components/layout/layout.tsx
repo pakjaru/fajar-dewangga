@@ -15,7 +15,9 @@ export const Layout: FunctionComponent<LayoutProps> = (props) => {
       <GlobalStyles />
 
       <Header />
-        {children}
+        <main>
+          {children}
+        </main>
       <Footer />
     </>
   )
