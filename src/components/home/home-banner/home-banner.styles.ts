@@ -14,12 +14,12 @@ export const Introduction = styled.div`
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
 
-  @media only screen and (max-width: 1199px) {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     font-size: 14px;
   }
 
   @media only screen and (max-width: 575px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 `
 
@@ -29,12 +29,12 @@ export const Name = styled.div`
   font-weight: 600;
   margin-top: 20px;
 
-  @media only screen and (max-width: 1199px) {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     font-size: 48px;
   }
 
   @media only screen and (max-width: 575px) {
-    font-size: 24px;
+    font-size: 32px;
   }
 `
 
@@ -43,12 +43,12 @@ export const Signature = styled.div`
   font-weight: 600;
   margin-top: 10px;
 
-  @media only screen and (max-width: 1199px) {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     font-size: 48px;
   }
 
   @media only screen and (max-width: 575px) {
-    font-size: 24px;
+    font-size: 32px;
   }
 `
 
@@ -62,13 +62,13 @@ export const Description = styled.div`
     color: ${secondary};
   }
 
-  @media only screen and (max-width: 1199px) {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     font-size: 14px;
     max-width: 298px;
   }
 
   @media only screen and (max-width: 575px) {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 100%;
   }
 `
@@ -88,14 +88,16 @@ export const Button = styled.button`
     background-color: rgba(100, 255, 218, 0.2);
   }
 
-  @media only screen and (max-width: 1199px) {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     font-size: 14px;
     margin-top: 40px;
     padding: 15px 20px;
   }
 
   @media only screen and (max-width: 575px) {
-    font-size: 12px;
+    font-size: 14px;
+    margin-top: 40px;
+    padding: 15px 20px;
   }
 `
 
@@ -129,20 +131,13 @@ export const LeftDecoration = styled.div`
       margin-right: 0;
     }
 
-    &:hover {
-      img {
-        filter: brightness(0);
-      }
-    }
-
     img {
       height: 100%;
-      transition: filter 0.2s ease-in-out;
       width: 100%;
     }
   }
 
-  @media only screen and (max-width: 1199px) {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     bottom: 135px;
     left: -10px;
 
@@ -158,13 +153,8 @@ export const LeftDecoration = styled.div`
     }
   }
 
-  @media only screen and (max-width: 575px) {
-    left: -15px;
-
-    a {
-      height: 16px;
-      width: 16px;
-    }
+  @media only screen and (max-width: 991px) {
+    display: none;
   }
 `
 
@@ -188,6 +178,7 @@ export const RightDecoration = styled.div`
 
   a {
     color: ${primaryLight};
+    font-family: 'Roboto Mono', monospace;
     font-size: 14px;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
@@ -197,7 +188,7 @@ export const RightDecoration = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1199px) {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     bottom: 165px;
     right: -40px;
 
@@ -211,7 +202,7 @@ export const RightDecoration = styled.div`
     }
   }
 
-  @media only screen and (max-width: 575px) {
-    right: -50px;
+  @media only screen and (max-width: 991px) {
+    display: none;
   }
 `

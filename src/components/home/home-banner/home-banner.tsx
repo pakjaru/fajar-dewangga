@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react"
 
-import { github, instagram, linkedin } from "@images/index"
+import { github, instagram, linkedin } from "@images"
 import { Container } from "@utils/global-styles"
 
 import { HomeBannerProps } from "./home-banner.props"

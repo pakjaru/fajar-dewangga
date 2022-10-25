@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "commonjs",
+    "moduleResolution": "node",
     "target": "es6",
     "jsx": "preserve",
     "lib": ["dom", "es2015", "es2017"],
@@ -14,8 +15,8 @@
     "removeComments": false,
     "baseUrl": "./",
     "paths": {
-      "@images/*": ["./src/assets/images/*"],
-      "@components/*": ["./src/components/*"],
+      "@images": ["./src/assets/images"],
+      "@components": ["./src/components"],
       "@utils/*": ["./src/utils/*"]
     }
   },

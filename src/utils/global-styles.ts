@@ -7,6 +7,12 @@ export const primaryLight = '#ccd6f6'
 export const secondary = '#64ffda'
 
 export const GlobalStyles = createGlobalStyle`
+  *,
+  *::before,
+  *::after {
+    box-sizing:border-box;
+  }
+
   ::selection {
     background-color: ${primaryLight};
     color: ${primary};
@@ -42,11 +48,15 @@ export const Container = styled.div`
   position: relative;
 
   @media only screen and (max-width: 1199px) {
-    width: 580px;
+    width: 820px;
+  }
+
+  @media only screen and (max-width: 991px) {
+    padding: 0 50px;
+    width: 100%;
   }
 
   @media only screen and (max-width: 575px) {
-    padding: 50px;
-    width: 100%;
+    padding: 0 25px;
   }
 `
