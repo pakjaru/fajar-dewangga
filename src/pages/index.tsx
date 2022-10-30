@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import {
-  HomeAbout, HomeBanner, Layout
+  HomeAbout, HomeBanner, HomeContact, Layout
 } from "@components"
 import { GlobalHelmet } from "@utils/global-helmet"
 
@@ -13,6 +13,7 @@ const IndexPage = () => {
       <Layout>
         <HomeBanner />
         <HomeAbout />
+        <HomeContact />
       </Layout>
     </>
   )

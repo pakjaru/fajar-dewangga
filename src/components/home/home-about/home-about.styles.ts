@@ -4,7 +4,7 @@ import { triangle } from "@images"
 import { secondary } from "@utils/global-styles"
 
 export const About = styled.section`
-
+  padding: 100px 0;
 `
 
 export const AboutWrapper = styled.div`
@@ -104,7 +104,7 @@ export const AboutSkill = styled.ul`
 
     li {
       font-size: 12px;
-      width: 175px;
+      width: 155px;
     }
   }
 `
