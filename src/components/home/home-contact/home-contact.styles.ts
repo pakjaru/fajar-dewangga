@@ -7,6 +7,10 @@ export const Contact = styled.section`
   display: flex;
   justify-content: center;
   padding: 100px 0;
+
+  @media only screen and (max-width: 575px) {
+    padding: 50px 0;
+  }
 `
 
 export const ContactWrapper = styled.div`

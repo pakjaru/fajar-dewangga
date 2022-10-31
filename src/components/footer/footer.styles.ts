@@ -5,6 +5,10 @@ import { primary, secondary } from "@utils/global-styles"
 export const FooterMain = styled.footer`
   margin-top: 100px;
   padding: 50px 0;
+
+  @media only screen and (max-width: 575px) {
+    margin-top: 50px;
+  }
 `
 
 export const FooterWrapper = styled.div`

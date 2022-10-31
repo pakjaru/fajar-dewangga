@@ -5,6 +5,10 @@ import { secondary } from "@utils/global-styles"
 
 export const About = styled.section`
   padding: 100px 0;
+
+  @media only screen and (max-width: 575px) {
+    padding: 50px 0;
+  }
 `
 
 export const AboutWrapper = styled.div`
