@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react"
 
 import { github, instagram, linkedin } from "@images"
 import { Container } from "@utils/global-styles"
+import { scrollToSection } from "@utils/scroll-to-section"
 
 import { HomeBannerProps } from "./home-banner.props"
 import {
@@ -37,7 +38,7 @@ export const HomeBanner: FunctionComponent<HomeBannerProps> = () => {
         <Description>
           I’m a software engineer specializing in front end <span>website</span> developer (with some experience in <span>mobile</span> development).
         </Description>
-        <Button>Check out my work!</Button>
+        <Button onClick={() => scrollToSection('works')}>Check out my work!</Button>
       </Container>
 
       <RightDecoration>

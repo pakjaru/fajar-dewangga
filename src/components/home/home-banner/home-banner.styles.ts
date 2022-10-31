@@ -131,6 +131,12 @@ export const LeftDecoration = styled.div`
       margin-right: 0;
     }
 
+    &:hover {
+      img {
+        filter: brightness(100);
+      }
+    }
+
     img {
       height: 100%;
       width: 100%;

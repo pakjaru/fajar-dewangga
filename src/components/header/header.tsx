@@ -1,6 +1,7 @@
 import React, { FunctionComponent, RefObject, useEffect, useRef } from "react"
 
 import { logo } from "@images"
+import { scrollToSection } from "@utils/scroll-to-section"
 
 import { HeaderProps } from "./header.props"
 import {
@@ -54,9 +55,9 @@ export const Header: FunctionComponent<HeaderProps> = () => {
 
         <Nav ref={navRef as RefObject<HTMLElement>}>
           <NavWrapper>
-            <NavItem><a href="/#about">About</a></NavItem>
-            <NavItem><a href="/#work">Work</a></NavItem>
-            <NavItem><a href="/#contact">Contact</a></NavItem>
+            <NavItem><button onClick={() => scrollToSection('about')}>About</button></NavItem>
+            <NavItem><button onClick={() => scrollToSection('works')}>Works</button></NavItem>
+            <NavItem><button onClick={() => scrollToSection('contact')}>Contact</button></NavItem>
           </NavWrapper>
           <NavButton>Resume</NavButton>
         </Nav>

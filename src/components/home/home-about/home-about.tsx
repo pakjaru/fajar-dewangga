@@ -17,7 +17,7 @@ import {
 
 export const HomeAbout: FunctionComponent<HomeAboutProps> = () => {
   return (
-    <About>
+    <About id="about">
       <Container>
         <SectionTitle title="About Me" number="01" />
         

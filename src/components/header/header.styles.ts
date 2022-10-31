@@ -5,6 +5,7 @@ import { backgroundSecondary, primaryLight, secondary } from "@utils/global-styl
 export const HeaderStyle = styled.header`
   align-items: center;
   background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
   display: flex;
   font-family: 'Roboto Mono', monospace;
   height: 90px;
@@ -66,6 +67,7 @@ export const Nav = styled.nav`
   }
 
   @media only screen and (max-width: 575px) {
+    height: 100vh;
     width: 75%;
   }
 `
@@ -100,9 +102,13 @@ export const NavItem = styled.li`
     margin-right: 0;
   }
 
-  a {
+  button {
+    background-color: transparent;
+    border: none;
     color: ${primaryLight};
+    cursor: pointer;
     font-size: 14px;
+    padding: 0;
     position: relative;
     text-decoration: none;
 
@@ -134,7 +140,7 @@ export const NavItem = styled.li`
       margin-bottom: 5px;
     }
 
-    a {
+    button {
       font-size: 18px;
       text-align: center;
       transition: color 0.2s ease-in-out;
@@ -155,7 +161,7 @@ export const NavItem = styled.li`
       font-size: 14px;
     }
 
-    a {
+    button {
       font-size: 14px;
     }
   }

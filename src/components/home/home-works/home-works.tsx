@@ -14,7 +14,7 @@ const works = require("./works.json")
 
 export const HomeWorks: FunctionComponent<HomeWorksProps> = () => {
   return (
-    <Works>
+    <Works id="works">
       <Container>
         <SectionTitle title="My Works" number="03" />
 

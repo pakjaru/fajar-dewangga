@@ -12,12 +12,12 @@ import {
 
 export const HomeContact: FunctionComponent<HomeContactProps> = () => {
   return (
-    <Contact>
+    <Contact id="contact">
       <Container>
         <ContactWrapper>
           <SectionTitle>Get in Touch</SectionTitle>
           <Description>I'm always looking for any new opportunities, whether you have a question or just want to say hi, I'll try my best to catch you up.</Description>
-          <Button>Say Hello</Button>
+          <Button href="mailto:fajarudewangga@gmail.com">Say Hello</Button>
         </ContactWrapper>
       </Container>
     </Contact>
