@@ -25,7 +25,7 @@ export const HomeAbout: FunctionComponent<HomeAboutProps> = () => {
           <AboutContent>
             <AboutText>
               Hello! My name is Fajar Dewangga and I enjoy building application 
-              on the internet. My journey in web development began in 2018
+              on the internet. My journey in web development began in 2019
               when I’m still a college student — turns out building website with 
               HTML & CSS is so much fun!
             </AboutText>
