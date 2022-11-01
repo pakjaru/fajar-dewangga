@@ -84,14 +84,14 @@ export const Header: FunctionComponent<HeaderProps> = () => {
 
         <Nav ref={navRef as RefObject<HTMLElement>}>
           <NavWrapper>
-            <NavItem data-aos="fade-down" data-aos-delay="0"><button onClick={() => onNavClickHandler('about')}>About</button></NavItem>
-            <NavItem data-aos="fade-down" data-aos-delay="200"><button onClick={() => onNavClickHandler('works')}>Works</button></NavItem>
-            <NavItem data-aos="fade-down" data-aos-delay="300"><button onClick={() => onNavClickHandler('contact')}>Contact</button></NavItem>
+            <NavItem data-aos="fade-down" data-aos-duration="300" data-aos-delay="0"><button onClick={() => onNavClickHandler('about')}>About</button></NavItem>
+            <NavItem data-aos="fade-down" data-aos-duration="300" data-aos-delay="50"><button onClick={() => onNavClickHandler('works')}>Works</button></NavItem>
+            <NavItem data-aos="fade-down" data-aos-duration="300" data-aos-delay="100"><button onClick={() => onNavClickHandler('contact')}>Contact</button></NavItem>
           </NavWrapper>
-          <NavButton data-aos="fade-down" data-aos-delay="400">Resume</NavButton>
+          <NavButton data-aos="fade-down" data-aos-duration="300" data-aos-delay="150">Resume</NavButton>
         </Nav>
 
-        <NavMenu ref={menuRef as RefObject<HTMLButtonElement>} onClick={onMenuClickHandler} data-aos="fade-down" data-aos-delay="100">
+        <NavMenu ref={menuRef as RefObject<HTMLButtonElement>} onClick={onMenuClickHandler} data-aos="fade-down" data-aos-duration="300">
           <span></span>
           <span></span>
         </NavMenu>

@@ -11,6 +11,48 @@ export const FooterMain = styled.footer`
   }
 `
 
+export const FooterMenu = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  a {
+    height: 24px;
+    margin-right: 40px;
+    width: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      img {
+        filter: brightness(100);
+      }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    display: none;
+  }
+
+  @media only screen and (max-width: 575px) {
+    margin-bottom: 20px;
+
+    a {
+      height: 20px;
+      margin-right: 20px;
+      width: 20px;
+    }
+  }
+`
+
 export const FooterWrapper = styled.div`
   align-items: center;
   display: flex;

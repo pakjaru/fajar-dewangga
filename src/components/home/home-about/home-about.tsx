@@ -21,7 +21,7 @@ export const HomeAbout: FunctionComponent<HomeAboutProps> = () => {
       <Container>
         <SectionTitle title="About Me" number="01" />
         
-        <AboutWrapper data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <AboutWrapper data-aos="fade-up">
           <AboutContent>
             <AboutText>
               Hello! My name is Fajar Dewangga and I enjoy building application 
