@@ -13,13 +13,11 @@ export const HeaderStyle = styled.header`
   position: fixed;
   right: 0;
   top: 0;
+  transition: height 0.2s ease-in-out;
   z-index: 900;
 
   &.active {
-    box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
-  }
-
-  @media only screen and (max-width: 767px) {
+    box-shadow: 0 10px 10px -10px rgba(2,12,27,0.7);
     height: 70px;
   }
 `
@@ -32,7 +30,7 @@ export const HeaderContainer = styled.div`
   padding: 0 50px;
   width: 100%;
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 991px) {
     padding: 0 25px;
   }
 `
@@ -49,10 +47,11 @@ export const Nav = styled.nav`
   align-items: center;
   display: flex;
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 991px) {
     background-color: ${backgroundSecondary};
     bottom: 0;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
     position: fixed;
     right: 0;
@@ -66,8 +65,7 @@ export const Nav = styled.nav`
     }
   }
 
-  @media only screen and (max-width: 575px) {
-    height: 100vh;
+  @media only screen and (max-width: 767px) {
     width: 75%;
   }
 `
@@ -79,7 +77,7 @@ export const NavWrapper = styled.ol`
   margin: 0;
   padding: 0;
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 991px) {
     flex-direction: column;
     width: 100%;
   }
@@ -128,7 +126,7 @@ export const NavItem = styled.li`
     }
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 991px) {
     flex-direction: column;
     margin-right: 0;
     margin-bottom: 40px;
@@ -137,7 +135,7 @@ export const NavItem = styled.li`
     &::before {
       font-size: 18px;
       margin-right: 0;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
     button {
@@ -156,7 +154,7 @@ export const NavItem = styled.li`
     }
   }
 
-  @media only screen and (max-width: 575px) {
+  @media only screen and (max-width: 767px) {
     &::before {
       font-size: 14px;
     }
@@ -182,13 +180,13 @@ export const NavButton = styled.button`
     background-color: rgba(100, 255, 218, 0.2);
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 991px) {
     margin-left: 0;
     margin-top: 40px;
     padding: 20px 60px;
   }
 
-  @media only screen and (max-width: 575px) {
+  @media only screen and (max-width: 767px) {
     margin-top: 0;
   }
 `
@@ -241,7 +239,7 @@ export const NavMenu = styled.button`
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     display: none;
   }
 `

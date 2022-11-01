@@ -16,38 +16,67 @@ import {
 } from "./header.styles"
 
 export const Header: FunctionComponent<HeaderProps> = () => {
+  const headerRef = useRef<HTMLElement>()
   const menuRef = useRef<HTMLElement>()
   const navRef = useRef<HTMLButtonElement>()
+
+  const removeHeaderActiveClass = () => {
+    if (window.innerWidth > 991 || !menuRef?.current || !navRef?.current) return
+
+    menuRef.current.classList.remove('active')
+    navRef.current.classList.remove('active')
+    document.querySelector('body')?.classList.remove('blur')
+  }
+
+  const onNavClickHandler = (section: string) => {
+    removeHeaderActiveClass()
+    scrollToSection(section)
+  }
 
   const onMenuClickHandler = () => {
     if (!menuRef?.current || !navRef?.current) return
 
     menuRef.current.classList.toggle('active')
     navRef.current.classList.toggle('active')
+    document.querySelector('body')?.classList.toggle('blur')
   }
 
   const onWindowClickHandler = ({ target }: MouseEvent) => {
-    if (window.innerWidth > 767 || !menuRef?.current || !navRef?.current) return
+    if (window.innerWidth > 991 || !menuRef?.current || !navRef?.current) return
     
     if (
-      !menuRef.current.classList.contains('active') &&
-      !navRef.current.classList.contains('active')
-    ) return
+      menuRef.current.classList.contains('active') &&
+      navRef.current.classList.contains('active')
+    ) {
+      if (
+        !navRef.current.contains(target as Node) &&
+        !menuRef.current.contains(target as Node)
+      ) {
+        removeHeaderActiveClass()
+      }
+    }
+  }
 
-    if (menuRef.current.contains(target as Node)) return
+  const onWindowScrollHandler = () => {
+    if (!headerRef.current) return
 
-    menuRef.current.classList.remove('active')
-    navRef.current.classList.remove('active')
+    if (window.scrollY > 10) return headerRef.current.classList.add('active')
+
+    headerRef.current.classList.remove('active')
   }
 
   useEffect(() => {
     window.addEventListener('click', (e) => onWindowClickHandler(e))
+    window.addEventListener('scroll', onWindowScrollHandler)
 
-    return () => window.removeEventListener('click', (e) => onWindowClickHandler(e))
+    return () => {
+      window.removeEventListener('click', (e) => onWindowClickHandler(e))
+      window.removeEventListener('scroll', onWindowScrollHandler)
+    }
   }, [])
 
   return (
-    <HeaderStyle>
+    <HeaderStyle ref={headerRef as RefObject<HTMLElement>}>
       <HeaderContainer>
         <HeaderLogo href="/">
           <img src={logo} alt="Logo" />
@@ -55,9 +84,9 @@ export const Header: FunctionComponent<HeaderProps> = () => {
 
         <Nav ref={navRef as RefObject<HTMLElement>}>
           <NavWrapper>
-            <NavItem><button onClick={() => scrollToSection('about')}>About</button></NavItem>
-            <NavItem><button onClick={() => scrollToSection('works')}>Works</button></NavItem>
-            <NavItem><button onClick={() => scrollToSection('contact')}>Contact</button></NavItem>
+            <NavItem><button onClick={() => onNavClickHandler('about')}>About</button></NavItem>
+            <NavItem><button onClick={() => onNavClickHandler('works')}>Works</button></NavItem>
+            <NavItem><button onClick={() => onNavClickHandler('contact')}>Contact</button></NavItem>
           </NavWrapper>
           <NavButton>Resume</NavButton>
         </Nav>
