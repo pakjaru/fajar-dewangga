@@ -102,23 +102,26 @@ export const Button = styled.button`
 `
 
 export const LeftDecoration = styled.div`
-  align-items: center;
   bottom: 220px;
-  display: flex;
   left: -15px;
   position: fixed;
-  transform: rotate(90deg);
+  
+  div {
+    align-items: center;
+    display: flex;
+    transform: rotate(90deg);
 
-  &::after {
-    background-color: ${primaryLight};
-    content: "";
-    height: 1px;
-    left: 100%;
-    margin-left: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 120px;
+    &::after {
+      background-color: ${primaryLight};
+      content: "";
+      height: 1px;
+      left: 100%;
+      margin-left: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 120px;
+    }
   }
 
   a {
@@ -147,7 +150,7 @@ export const LeftDecoration = styled.div`
     bottom: 135px;
     left: -10px;
 
-    &::after {
+    div::after {
       margin-left: 20px;
       width: 80px;
     }
@@ -168,18 +171,21 @@ export const RightDecoration = styled.div`
   bottom: 240px;
   position: fixed;
   right: -30px;
-  transform: rotate(90deg);
+  
+  div {
+    transform: rotate(90deg);
 
-  &::after {
-    background-color: ${primaryLight};
-    content: "";
-    height: 1px;
-    left: 100%;
-    margin-left: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 120px;
+    &::after {
+      background-color: ${primaryLight};
+      content: "";
+      height: 1px;
+      left: 100%;
+      margin-left: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 120px;
+    }
   }
 
   a {
@@ -198,7 +204,7 @@ export const RightDecoration = styled.div`
     bottom: 165px;
     right: -40px;
 
-    &::after {
+    div::after {
       margin-left: 20px;
       width: 80px;
     }

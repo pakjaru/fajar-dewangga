@@ -15,8 +15,8 @@ export const Layout: FunctionComponent<LayoutProps> = (props) => {
   useEffect(() => {
     Aos.init({
       duration: 600,
-      easing: 'ease-in-out',
-      once: true
+      once: true,
+      anchorPlacement: 'bottom-top'
     })
   }, [])
 
