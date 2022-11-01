@@ -28,7 +28,7 @@ export const WorkItem: FunctionComponent<WorkItemProps> = props => {
 
   return (
     <Item className={extraClass}>
-      <Image>
+      <Image href={url} target="_blank" rel="noopener noreferrer">
         <img src={image} alt={title} />
       </Image>
       <Content className={extraClass}>
