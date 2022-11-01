@@ -26,11 +26,29 @@ export const Item = styled.div`
 `
 
 export const Image = styled.a`
+  border-radius: 4px;
   display: block;
   height: 0;
+  overflow: hidden;
   padding-top: 37.5%;
   position: relative;
   width: 60%;
+
+  &:hover::before {
+    opacity: 0;
+  }
+
+  &::before {
+    background-color: rgba(100, 255, 218, 0.6);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1;
+  }
 
   img {
     height: 100%;
@@ -46,6 +64,10 @@ export const Image = styled.a`
     padding-top: 0;
     position: absolute;
     width: 100%;
+
+    &::before {
+      display: none;
+    }
   }
 `
 
@@ -57,6 +79,7 @@ export const Content = styled.div`
   top: 50%;
   transform: translateY(-50%);
   width: 50%;
+  z-index: 10;
 
   &.even {
     align-items: flex-start;

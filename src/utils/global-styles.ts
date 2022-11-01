@@ -39,6 +39,16 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     overflow-x: hidden;
     padding: 0;
+
+    &.blur {
+      overflow: hidden;
+
+      main {
+        filter: blur(5px) brightness(0.8);
+        pointer-events: none;
+        user-select: none;
+      }
+    }
   }
 `
 

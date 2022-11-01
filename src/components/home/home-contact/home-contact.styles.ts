@@ -53,7 +53,7 @@ export const Description = styled.p`
   }
 `
 
-export const Button = styled.button`
+export const Button = styled.a`
   background-color: transparent;
   border: 1px solid ${secondary};
   border-radius: 4px;
@@ -62,6 +62,7 @@ export const Button = styled.button`
   font-size: 16px;
   margin-top: 40px;
   padding: 20px 40px;
+  text-decoration: none;
   transition: all 0.2s ease-in-out;
 
   &:hover {

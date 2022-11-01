@@ -14,9 +14,9 @@ const works = require("./works.json")
 
 export const HomeWorks: FunctionComponent<HomeWorksProps> = () => {
   return (
-    <Works>
+    <Works id="works">
       <Container>
-        <SectionTitle title="My Works" number="03" />
+        <SectionTitle title="My Works" number="02" />
 
         <WorksWrapper>
           {works.map((work: WorkItemProps, index: number) => (

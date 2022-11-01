@@ -1,4 +1,6 @@
-import React, { FunctionComponent } from "react"
+import React, { FunctionComponent, useEffect } from "react"
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 import { GlobalStyles } from "@utils/global-styles"
 import { Header, Footer } from "@components"
@@ -9,6 +11,14 @@ export const Layout: FunctionComponent<LayoutProps> = (props) => {
   const {
     children
   } = props
+
+  useEffect(() => {
+    Aos.init({
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true
+    })
+  }, [])
 
   return (
     <>

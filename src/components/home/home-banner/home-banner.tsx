@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react"
 
 import { github, instagram, linkedin } from "@images"
 import { Container } from "@utils/global-styles"
+import { scrollToSection } from "@utils/scroll-to-section"
 
 import { HomeBannerProps } from "./home-banner.props"
 import {
@@ -15,7 +16,7 @@ import {
   Signature
 } from "./home-banner.styles"
 
-export const HomeBanner: FunctionComponent<HomeBannerProps> = () => {
+export const HomeBanner: FunctionComponent<HomeBannerProps> = () => { 
   return (
     <Banner>
       <LeftDecoration>
@@ -31,13 +32,13 @@ export const HomeBanner: FunctionComponent<HomeBannerProps> = () => {
       </LeftDecoration>
 
       <Container>
-        <Introduction>Hello, my name is</Introduction>
-        <Name>Fajar Dewangga.</Name>
-        <Signature>I love building application.</Signature>
-        <Description>
+        <Introduction data-aos="fade-up" data-aos-delay="500">Hello, my name is</Introduction>
+        <Name data-aos="fade-up" data-aos-delay="600">Fajar Dewangga.</Name>
+        <Signature data-aos="fade-up" data-aos-delay="700">I love building application.</Signature>
+        <Description data-aos="fade-up" data-aos-delay="800">
           I’m a software engineer specializing in front end <span>website</span> developer (with some experience in <span>mobile</span> development).
         </Description>
-        <Button>Check out my work!</Button>
+        <Button onClick={() => scrollToSection('works')} data-aos="fade-up" data-aos-delay="1000">Check out my work!</Button>
       </Container>
 
       <RightDecoration>
