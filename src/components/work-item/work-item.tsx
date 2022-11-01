@@ -27,7 +27,7 @@ export const WorkItem: FunctionComponent<WorkItemProps> = props => {
   } = props
 
   return (
-    <Item className={extraClass}>
+    <Item className={extraClass} data-aos="fade-up" data-aos-anchor-placement="top-center">
       <Image href={url} target="_blank" rel="noopener noreferrer">
         <img src={image} alt={title} />
       </Image>

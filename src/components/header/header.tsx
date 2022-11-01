@@ -84,14 +84,14 @@ export const Header: FunctionComponent<HeaderProps> = () => {
 
         <Nav ref={navRef as RefObject<HTMLElement>}>
           <NavWrapper>
-            <NavItem><button onClick={() => onNavClickHandler('about')}>About</button></NavItem>
-            <NavItem><button onClick={() => onNavClickHandler('works')}>Works</button></NavItem>
-            <NavItem><button onClick={() => onNavClickHandler('contact')}>Contact</button></NavItem>
+            <NavItem data-aos="fade-down" data-aos-delay="0"><button onClick={() => onNavClickHandler('about')}>About</button></NavItem>
+            <NavItem data-aos="fade-down" data-aos-delay="200"><button onClick={() => onNavClickHandler('works')}>Works</button></NavItem>
+            <NavItem data-aos="fade-down" data-aos-delay="300"><button onClick={() => onNavClickHandler('contact')}>Contact</button></NavItem>
           </NavWrapper>
-          <NavButton>Resume</NavButton>
+          <NavButton data-aos="fade-down" data-aos-delay="400">Resume</NavButton>
         </Nav>
 
-        <NavMenu ref={menuRef as RefObject<HTMLButtonElement>} onClick={onMenuClickHandler}>
+        <NavMenu ref={menuRef as RefObject<HTMLButtonElement>} onClick={onMenuClickHandler} data-aos="fade-down" data-aos-delay="100">
           <span></span>
           <span></span>
         </NavMenu>

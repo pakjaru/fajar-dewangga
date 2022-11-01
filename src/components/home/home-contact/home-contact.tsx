@@ -12,7 +12,7 @@ import {
 
 export const HomeContact: FunctionComponent<HomeContactProps> = () => {
   return (
-    <Contact id="contact">
+    <Contact id="contact" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <Container>
         <ContactWrapper>
           <SectionTitle>Get in Touch</SectionTitle>
