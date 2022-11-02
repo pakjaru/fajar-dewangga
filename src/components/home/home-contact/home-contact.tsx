@@ -16,7 +16,7 @@ export const HomeContact: FunctionComponent<HomeContactProps> = () => {
       <Container>
         <ContactWrapper>
           <SectionTitle>Get in Touch</SectionTitle>
-          <Description>I'm always looking for any new opportunities, whether you have a question or just want to say hi, I'll try my best to catch you up.</Description>
+          <Description>I'm always looking for any new opportunities, whether you have a question or just want to say hi, I'll try my best to get in touch with you ASAP.</Description>
           <Button href="mailto:fajarudewangga@gmail.com">Say Hello</Button>
         </ContactWrapper>
       </Container>

@@ -237,6 +237,7 @@ export const Techs = styled.ul`
 
     @media only screen and (max-width: 575px) {
       font-size: 12px;
+      margin-right: 10px;
     }
   }
 
@@ -252,6 +253,7 @@ export const Buttons = styled.div`
   align-items: center;
   display: flex;
   margin-top: 20px;
+  z-index: 10;
 
   &.even {
     justify-content: flex-start;
