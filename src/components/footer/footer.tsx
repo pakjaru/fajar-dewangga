@@ -28,8 +28,8 @@ export const Footer: FunctionComponent<FooterProps> = () => {
         </FooterMenu>
 
         <FooterWrapper>
-          <FooterText href="https://github.com/bchiang7" target="_blank" rel="noopener noreferrer">Designed by Brittany Chiang</FooterText>
-          <FooterText href="https://github.com/pakjaru" target="_blank" rel="noopener noreferrer">Built by Fajar Dewangga</FooterText>
+          <FooterText>Designed by <a href="https://github.com/bchiang7" target="_blank" rel="noopener noreferrer">Brittany Chiang</a></FooterText>
+          <FooterText>Built by <a href="https://github.com/pakjaru" target="_blank" rel="noopener noreferrer">Fajar Dewangga</a></FooterText>
         </FooterWrapper>
       </Container>
     </FooterMain>

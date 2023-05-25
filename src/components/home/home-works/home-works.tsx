@@ -22,13 +22,7 @@ export const HomeWorks: FunctionComponent<HomeWorksProps> = () => {
           {works.map((work: WorkItemProps, index: number) => (
             <WorkItem
               key={index}
-              image={work.image}
-              title={work.title}
-              category={work.category}
-              description={work.description}
-              techs={work.techs}
-              url={work.url}
-              github={work.github}
+              {...work}
               extraClass={(index % 2) ? "even" : "odd" }
             />
           ))}

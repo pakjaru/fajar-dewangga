@@ -7,6 +7,7 @@ export const Banner = styled.section`
   display: flex;
   height: 100vh;
   position: relative;
+  z-index: 10;
 `
 
 export const Introduction = styled.div`
@@ -136,12 +137,13 @@ export const LeftDecoration = styled.div`
 
     &:hover {
       img {
-        filter: brightness(100);
+        filter: brightness(0) invert(1);
       }
     }
 
     img {
       height: 100%;
+      transition: all 0.2s ease-in-out;
       width: 100%;
     }
   }
