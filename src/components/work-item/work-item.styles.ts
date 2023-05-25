@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import { backgroundSecondary, primaryLight, secondary } from "@utils/global-styles"
+import { primary } from "@utils/global-styles"
 
 export const Item = styled.div`
   display: flex;
@@ -39,7 +40,7 @@ export const Image = styled.a`
   }
 
   &::before {
-    background-color: rgba(100, 255, 218, 0.6);
+    background-color: rgba(100, 255, 218, 0.85);
     bottom: 0;
     content: "";
     left: 0;
@@ -112,30 +113,20 @@ export const Content = styled.div`
   }
 `
 
-export const Category = styled.a`
+export const CategoryWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+`
+
+export const Category = styled.span`
   color: ${secondary};
   font-size: 14px;
   font-family: 'Roboto Mono', monospace;
-  margin: 0;
+  margin: 0 5px;
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
-  width: fit-content;
-
-  &:hover::after {
-    right: 0;
-  }
-  
-  &::after {
-    background-color: ${secondary};
-    bottom: 0;
-    content: "";
-    height: 1px;
-    left: 0;
-    position: absolute;
-    right: 100%;
-    transition: right 0.2s ease-in-out;
-  }
 
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     font-size: 12px;
@@ -179,6 +170,20 @@ export const Title = styled.a`
 
   @media only screen and (max-width: 575px) {
     font-size: 24px;
+  }
+`
+
+export const Association = styled.a`
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+  margin-top: 10px;
+
+  a {
+    color: ${secondary};
+    font-weight: 700;
+    margin-left: 5px;
+    text-decoration: none;
   }
 `
 

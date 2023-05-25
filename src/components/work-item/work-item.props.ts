@@ -12,7 +12,17 @@ export interface WorkItemProps {
   /**
    * Project's Category
    */
-  category: "website" | "mobile"
+  categories: string[]
+
+  /**
+   * Project's company name working with
+   */
+  association?: string
+
+  /**
+   * Project's company url working with
+   */
+  associationUrl?: string
 
   /**
    * Project's description

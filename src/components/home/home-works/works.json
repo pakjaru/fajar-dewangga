@@ -1,19 +1,50 @@
 [
   {
-    "image": "https://via.placeholder.com/1000",
-    "title": "Dummy 1",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "category": "website",
-    "techs": ["html", "css", "javascript"],
-    "url": "https://www.google.com/"
+    "image": "melalie.jpg",
+    "title": "Melalie",
+    "description": "Melalie is a mobile and website platform where you can rent and lease your motorbike.",
+    "association": "Itsavirus",
+    "associationUrl": "https://itsavirus.com",
+    "categories": ["website", "mobile"],
+    "techs": ["React", "React Native", "SCSS"],
+    "url": "https://www.melalie.com/app"
   },
   {
-    "image": "https://via.placeholder.com/1000",
-    "title": "Dummy 2",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "category": "mobile",
-    "techs": ["react", "gatsby"],
-    "url": "https://www.google.com/",
-    "github": "https://www.google.com/"
+    "image": "itsavirus.jpg",
+    "title": "Itsavirus",
+    "description": "Itsavirus is a software company that have designed, developed, launched, and scaled great software products since 2009.",
+    "association": "Itsavirus",
+    "associationUrl": "https://itsavirus.com",
+    "categories": ["website"],
+    "techs": ["React", "SCSS"],
+    "url": "https://itsavirus.com"
+  },
+  {
+    "image": "bootverhuur.jpg",
+    "title": "Bootverhuur Plas",
+    "description": "Bootverhuur Plas is a boat rental company that based on Netherland.",
+    "association": "Itsavirus",
+    "associationUrl": "https://itsavirus.com",
+    "categories": ["website"],
+    "techs": ["Rails", "SCSS", "ES6JS"],
+    "url": "https://bootverhuurplas.nl/"
+  },
+  {
+    "image": "bali-citra-medina.jpg",
+    "title": "Bali Citra Medina",
+    "description": "Bali Citra Medina is a car rental company that based on Bali, Indonesia",
+    "association": "Asteroit",
+    "categories": ["website"],
+    "techs": ["Rails", "SCSS", "ES6JS"],
+    "url": "https://www.balicitramedina.com"
+  },
+  {
+    "image": "studi-bali-internasional.jpg",
+    "title": "Studi Bali Internasional",
+    "description": "Study Bali International (SBI) is an English language provider located in Bali, Indonesia",
+    "association": "Itsavirus",
+    "categories": ["website"],
+    "techs": ["SCSS", "ES6 JS"],
+    "url": "https://studybaliinternational.com"
   }
 ]
